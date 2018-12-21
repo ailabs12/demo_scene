@@ -1,0 +1,168 @@
+#main-wrapper {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#download-image, #classification-result {
+    /* float: left; */
+    margin-right: -0.25em;
+    border: 1px solid gray;
+    display: inline-block;
+}
+
+#classification-result {
+    margin-left: 20px;
+    width: 640px;
+    height: 480px;
+    overflow-y: scroll;
+}
+
+.form-input {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    color: #339966;
+    text-transform: uppercase;
+}
+
+#classificator-selector {
+    margin-top: 20px;
+    text-align: center;
+}
+
+pre.prettycode {
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    white-space: pre-wrap;
+}
+
+.file-input {
+    width: 350px;
+    height: 36px;
+    position: relative;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-left-style: hidden;
+    /* overflow: hidden; */
+    padding: 4px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+.file-input .label-button {
+    line-height: 36px;
+    padding: 13px 16px;
+    border: 1px solid #339966;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+}
+
+.file-input:hover .label-button {
+    background-color: #339966;
+    color: white;
+}
+
+.file-input input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.file-input .chosen-file {
+    text-transform: none;
+    color: black;
+    opacity: 0.3;
+    padding-left: 10px;
+}
+
+.file-input .chosen {
+    opacity: 1;
+}
+
+.form-button {
+    width: 120px;
+    height: 44px;
+    position: relative;
+    border: 1px solid #339966;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    background-color: #339966;
+
+}
+
+.form-button:hover .label-button {
+    color: white;
+    
+}
+
+.form-button .label-button {
+    line-height: 44px;
+}
+
+.form-button input {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 0;
+    height: 0;
+}
+
+#classificator-selector .form-input {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#classificator-selector .form-input:first-child {
+    margin-left: 0;
+}
+
+#classificator-selector .custom-select {
+    width: 220px;
+    height: 44px;
+    border: 1px solid #339966;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#classificator-selector .custom-select option {
+    padding-left: 0;
+}
+
+#classificator-selector .custom-select,
+#classificator-selector .custom-select option {
+    background-color: white;
+    color: #339966;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#classificator-selector .custom-select:hover,
+#classificator-selector .custom-select option:hover  {
+    background-color: #339966;
+    color: white;
+}
+
+#classificator-selector .text-input {
+    width: 220px;
+    height: 42px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

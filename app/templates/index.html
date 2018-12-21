@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Web interface for all services</title>
+    <link href="{{url_for('static', filename='styles/index.css')}}" rel="stylesheet">
+    <script src="{{url_for('static', filename='scripts/index.js')}}"></script>
+</head>
+<body>
+    <div id="main-wrapper">
+        <canvas id="download-image" width="640" height="480"></canvas>
+        <div id="classification-result" width="640" height="480">
+            <pre class='prettycode'>
+                <p id="json"></p>
+            </pre>
+        </div>
+    </div>
+    <div id="form-container">
+        <form id="classificator-selector" action="" method="POST">
+            <div class="form-input">
+                <div class="file-input">
+                    <input type="file" name="filepath">
+                    <span class="label-button">Choose</span>
+                    <span class="chosen-file">No file selected</span>
+                </div>
+            </div>
+            <div class="form-input">
+                <input class="text-input" class type="url" name="url" placeholder="URL:">
+            </div>
+            <div class="form-input">
+                <select class="custom-select" name="service">
+                    <option value="emotion_classifier">Emotion classifier</option>
+                    <option value="gender_classifier">Gender classifier</option>
+                    <option value="age_classifier">Age classifier</option>
+                    <option value="car_classifier">Car classifier</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <div class="form-button" id='send-btn'>
+                    <span class='label-button'>SEND</span>
+                    <!-- <input type="button" value="Send"> -->
+                </div>
+            </div>
+            <input type="hidden" name="base64" value="">
+        </form>
+    </div>
+</body>
